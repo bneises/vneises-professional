@@ -3236,7 +3236,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			/* background-color: #261c3e; */
 		}
 
 		.wrapper.style1 {
@@ -3874,7 +3874,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("images/intro.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
