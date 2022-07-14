@@ -3907,3 +3907,12 @@ input, select, textarea {
 			}
 
 		}
+
+	.credit {
+		color: gray;
+		font-style: italic;
+		font-weight: lighter;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
