@@ -3911,8 +3911,8 @@ input, select, textarea {
 	.credit {
 		color: gray;
 		font-style: italic;
-		font-weight: lighter;
+		font-size: small;
 		position: absolute;
 		bottom: 0;
-		right: 0;
+		right: 10px;
 	}
