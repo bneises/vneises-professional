@@ -2504,7 +2504,8 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: none;
+			/* display: none; */
+			padding-left: 1em;
 		}
 
 		.icon:before {
@@ -2795,7 +2796,7 @@ input, select, textarea {
 
 		ul.contact > li {
 			padding: 0;
-			margin: 1.5em 0 0 0;
+			/* margin: 1.5em 0 0 0; */
 		}
 
 			ul.contact > li:first-child {
