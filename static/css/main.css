@@ -3917,3 +3917,8 @@ input, select, textarea {
 		bottom: 0;
 		right: 10px;
 	}
+
+	.profile {
+		border-radius: 20%;
+		width: 20em;
+	}
