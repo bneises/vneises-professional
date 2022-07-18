@@ -6,10 +6,10 @@
         <div class="inner">
             <nav>
                 <ul>
-                    <li><a href="#intro">Welcome</a></li>
-                    <li><a href="#one">Who we are</a></li>
-                    <li><a href="#two">What we do</a></li>
-                    <li><a href="#three">Get in touch</a></li>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#get in touch">Get in touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -21,42 +21,96 @@
         <!-- Intro -->
             <section id="intro" class="wrapper style1 fullscreen fade-up">
                 <div class="inner">
-                    <h1>Hyperspace</h1>
-                    <p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-                    and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+                    <img class="profile" src="static/images/ToriProfile.jpg" alt="">
+                    <h1>Victoria M. Neises, Ph.D.</h1>
+                    <h2>Animal Physiologist</h2>
+                    <p>
+                        Much of my research focuses on how the physiology of an organism shapes its behavior in reponse to environmental change. 
+                        My research encompasses nutritional and metabolic physiology, quantitative ecology, and foraging behavior. 
+                    </p>
                     <ul class="actions">
-                        <li><a href="#one" class="button scrolly">Learn more</a></li>
+                        <li><a href="#research" class="button scrolly">See my research...</a></li>
                     </ul>
+                </div>
+                <div class="credit">
+                    Photo by <a href="https://unsplash.com/@thenata?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Anastasia Taioglou</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>
                 </div>
             </section>
 
-        <!-- One -->
-            <section id="one" class="wrapper style2 spotlights">
+        <!-- Research -->
+            <section id="research" class="wrapper style2 spotlights">
+                <div class="inner">
+                    <h2>Research</h2>
+                    <p>
+                        To date, my work has focused on marine mammals in Alaskan ecosystems and has
+                        attempted to explore how changes in the prey field might be impacting pinniped (seals and sea lions)
+                        populations from a metabolic perspective.
+                    </p>
+                    <p>
+                        To assess these types of questions I use a variety of quantitative methods, including
+                        nonparametric analysis, such as PERMANOVA, linear discriminant analysis
+                        (LDA), and non-metric multidimensional scaling (NMDS), as well as regression
+                        analyses like GLM/GLMM and GAM/GAMM, as well as machine learning techniques
+                        such as random forest analysis.
+                    </p>
+                </div>
                 <section>
-                    <a href="#" class="image"><img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" data-position="center center" /></a>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/keith-luke-dKe9GgzS8Ek-unsplash.jpg') }}" alt="" data-position="26%" />
+                        <div class="credit">
+                            Photo by <a href="https://unsplash.com/@lukephotography" target="_blank" rel="noopener noreferrer">Keith Luke</a> on <a href="https://unsplash.com/@lukephotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>
+                        </div>
+                    </div>
                     <div class="content">
                         <div class="inner">
-                            <h2>Sed ipsum dolor</h2>
-                            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+                            <h2>Nutritional Physiology</h2>
+                            <p>
+                                My work in nutritional physiology focuses on the examination of blubber fatty acid profiles of Alaskan harbor seals
+                                and Steller sea lions. Because blubber fatty acids are largely derived from diet in these animals,
+                                we are able to use them as a proxy for diet and examine how they differ and change
+                                over time. In this study, I was able to use two large multi-decadal data sets to examine (1) 
+                                <a href="https://doi.org/10.1093/conphys/coab036" target="_blank" rel="noopener noreferrer">spatial and temporal 
+                                differences in blubber fatty acid profiles of Alaskan harbor seal populations</a>, (2) 
+                                <a href="https://doi.org/10.1578/AM.48.4.2022.362" target="_blank" rel="noopener noreferrer">examine blubber
+                                fatty acid profiles among pregnant and lactating harbor seals, and mother pup pairs</a>, and lastly, 
+                                (3) compare regional and seasonal blubber fatty acid profiles of Alaskan harbor seals and Steller sea 
+                                lions to examine the degree of prey partitioning between these species. 
+                                As a sentinel species in Alaska, the ability to survey blubber fatty acids of harbor seals provides a way 
+                                to not only monitor diet changes that could lead to population level impacts, but also provides a 
+                                means to oversee prey community changes and ecosystem health within the regions they inhabit.
+                                This work is a collaboration between <a href="https://www.baylor.edu/biology/" target="_blank" rel="noopener noreferrer">Baylor University</a> 
+                                and <a href="https://www.adfg.alaska.gov/index.cfm?adfg=home.main" target="_blank" rel="noopener noreferrer">Alaska Department of Fish and Game</a>.
+                            </p>
                             <ul class="actions">
-                                <li><a href="generic.html" class="button">Learn more</a></li>
+                                <li><a href="https://www.dropbox.com/sh/ttkehgw0tn7v7pe/AABOlNm9tMfIm-hCp-gi6djna?dl=0" class="button" target="_blank" rel="noopener noreferrer">SMM 2022 Poster</a></li>
                             </ul>
+                            
                         </div>
                     </div>
                 </section>
                 <section>
-                    <a href="#" class="image"><img src="{{ url_for('static', filename='images/pic02.jpg') }}" alt="" data-position="top center" /></a>
+                    <div class="image">
+                        <img src="{{ url_for('static', filename='images/554406_10100358566601697_99061861_n.jpg') }}" alt="" data-position="right center" />
+                    </div>
                     <div class="content">
                         <div class="inner">
-                            <h2>Feugiat consequat</h2>
-                            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+                            <h2>Respiratory Physiology</h2>
+                            <p>
+                                My work in respiratory physiology focused on how sea lions physiologically respond to increased foraging stress
+                                caused by changes in their prey field. In this study we determined that while sea
+                                lions are able to adjust their dive behavior to maintain foraging efficiency as the
+                                cost of foraging increases, their ability to sequester accumulating carbon dioxide
+                                diminishes. We proposed that carbon dioxide may be a more sensitive
+                                physiological marker than oxygen when examining the metabolic cost of foraging. This project was a 
+                                collaboration between <a href="https://www.alaskapacific.edu/" target="_blank" rel="noopener noreferrer">Alaska Pacific University</a> and <a href="https://animaltraining.us/physiology/" target="_blank" rel="noopener noreferrer">Moss Landing Marine Laboratories</a>.
+                            </p>
                             <ul class="actions">
-                                <li><a href="generic.html" class="button">Learn more</a></li>
+                                <li><a href="https://doi.org/10.1016/j.jembe.2016.11.001" class="button" target="_blank" rel="noopener noreferrer">Publication</a></li>
                             </ul>
                         </div>
                     </div>
                 </section>
-                <section>
+                <!--section>
                     <a href="#" class="image"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" data-position="25% 25%" /></a>
                     <div class="content">
                         <div class="inner">
@@ -67,58 +121,119 @@
                             </ul>
                         </div>
                     </div>
-                </section>
+                </section-->
             </section>
 
-        <!-- Two -->
-            <section id="two" class="wrapper style3 fade-up">
+        <!-- CV -->
+            <section id="cv" class="wrapper style3 fade-up">
                 <div class="inner">
-                    <h2>What we do</h2>
-                    <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+                    <h2>CV</h2>
+                    <p>
+                        Animal physiologist specializing in metabolic physiology of marine mammals. 
+                        Has knowledge in many aspects of marine systems, including physiological, chemical, and climatological 
+                        influences on marine mammals and fishes along the Pacific coast. Familiar with federal laws and 
+                        regulations including Marine Mammal Protection Act, the Endangered Species Act, and the National 
+                        Environmental Policy Act, to name a few. Able to manage and analyze large data sets utilizing both 
+                        univariate and multivariate parametric and non-parametric statistical tests, as well as communicate and 
+                        promote findings in reports, published manuscripts, and presentations. 
+                    </p>
+                    <h3>Peer Reviewed Manuscripts</h3>
+                    <ul>
+                        <li>
+                                <b>Neises VM</b>, Karpovich SA, Keogh MJ, and Trumble SJ. 2022. Examination of blubber fatty acids 
+                            in pregnant and lactating Alaskan harbor seals (<i>Phoca vitulina</i>). <i>Aquatic Mammals Journal.</i>  
+                            <a href="https://doi.org/10.1578/AM.48.4.2022.362" target="_blank" rel="noopener noreferrer">
+                                Doi:10.1578/AM.48.4.2022.362</a>
+                        </li>
+                        <li>
+                                <b>Neises VM</b>, Karpovich SA, Keogh MJ, King RS, Trumble SJ. 2021. Regional, seasonal and age 
+                                class blubber fatty acid signature analysis of harbour seals in Alaska from 1997 to 2010. 
+                                <i>Conservation Physiology.</i> 
+                                    <a href="https://doi.org/10.1093/conphys/coab036" target="_blank" rel="noopener noreferrer">
+                                    Doi:10.1093/conphys/coab036</a>
+                        </li>
+
+                        <li>
+                                <b>Neises VM</b>, Zeligs J, Harris B, and Cornick L. 2017. Examining the metabolic cost of otariid 
+                                foraging under varying conditions. <i>Journal of Experimental Marine Biology and Ecology.</i> 
+                                <a href="https://doi.org/10.1016/j.jembe.2016.11.001" target="_blank" rel="noopener noreferrer">Doi:10.1016/j.jembe.2016.11.001
+                            </a>
+                        </li>
+
+                    </ul>
                     <div class="features">
                         <section>
-                            <span class="icon solid major fa-code"></span>
-                            <h3>Lorem ipsum amet</h3>
-                            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                            <span class="icon major brands fa-r-project"></span>
+                            <h3>R</h3>
+                            <p>
+                                Linear discriminant analysis (LDA), Principal component analysis (PCA),
+                                Random forest analysis, Non-metric multidimensional
+                                scaling (NMDS), General linear modeling (GLM/GLMM), General additive modeling (GAM/GAMM),
+                                PERMANOVA, Parametric univariate and multivariate analyses
+                            </p>
                         </section>
                         <section>
-                            <span class="icon solid major fa-lock"></span>
-                            <h3>Aliquam sed nullam</h3>
-                            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                            <span class="icon solid major fa fa-globe"></span>
+                            <h3>QGIS/ArcGIS</h3>
+                            <p>Spatial analysis, R and QGIS integration for spatial modeling</p>
                         </section>
                         <section>
-                            <span class="icon solid major fa-cog"></span>
-                            <h3>Sed erat ullam corper</h3>
-                            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                            <span class="icon solid major fa fa-chart-line"></span>
+                            <h3>SPSS</h3>
+                            <p>Univariate and multivariate statistics, Data exploration, Data descriptives</p>
                         </section>
                         <section>
-                            <span class="icon solid major fa-desktop"></span>
-                            <h3>Veroeros quis lorem</h3>
-                            <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                            <span class="icon major brands fa-python"></span>
+                            <h3>Python</h3>
+                            <p>Data cleanup and integration, File manipulation</p>
                         </section>
-                        <section>
-                            <span class="icon solid major fa-link"></span>
+                        <!--section>
+                            <span class="icon solid major fa fa-link"></span>
                             <h3>Urna quis bibendum</h3>
                             <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                        </section>
-                        <section>
-                            <span class="icon major fa-gem"></span>
-                            <h3>Aliquam urna dapibus</h3>
+                        </section-->
+                        <!--section>
+                            <span class="icon major fa fa-gem"></span>
+                            <h3>Urna quis bibendum</h3>
                             <p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-                        </section>
+                        </section-->
                     </div>
                     <ul class="actions">
-                        <li><a href="generic.html" class="button">Learn more</a></li>
+                        <li><a href="static/images/NeisesCV_07_2022 Website.pdf" class="button" target="_blank" rel="noopener noreferrer">Latest CV</a></li>
                     </ul>
                 </div>
             </section>
 
-        <!-- Three -->
-            <section id="three" class="wrapper style1 fade-up">
+        <!-- Get in touch -->
+            <section id="get in touch" class="wrapper style1 fade-up">
                 <div class="inner">
                     <h2>Get in touch</h2>
-                    <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-                    <div class="split style1">
+                    <p>Please message or follow me below.</p>
+                    <ul class="contact">
+                        
+                        <li>
+                            <a href="https://www.linkedin.com/in/victoria-neises/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer">
+                                <span class="label">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/V_Neises" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer">
+                                <span class="label">Twitter - @V_Neises</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scholar.google.com/citations?user=ZTzmaCAAAAAJ&hl=en&oi=ao" class="icon brands fa-google" target="_blank" rel="noopener noreferrer">
+                                <span class="label">Google Scholar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/vneises" class="icon brands fa-github" target="_blank" rel="noopener noreferrer">
+                                <span class="label">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                
+                    <!-- div class="split style1">
                         <section>
                             <form method="post" action="#">
                                 <div class="fields">
@@ -143,32 +258,18 @@
                         <section>
                             <ul class="contact">
                                 <li>
-                                    <h3>Address</h3>
-                                    <span>12345 Somewhere Road #654<br />
-                                    Nashville, TN 00000-0000<br />
-                                    USA</span>
-                                </li>
-                                <li>
-                                    <h3>Email</h3>
-                                    <a href="#">user@untitled.tld</a>
-                                </li>
-                                <li>
-                                    <h3>Phone</h3>
-                                    <span>(000) 000-0000</span>
-                                </li>
-                                <li>
                                     <h3>Social</h3>
                                     <ul class="icons">
-                                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-                                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                        <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                        <li><a href="#" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer"><span class="label">Twitter</span></a></li>
+                                        <li><a href="#" class="icon brands fa-facebook-f" target="_blank" rel="noopener noreferrer"><span class="label">Facebook</span></a></li>
+                                        <li><a href="#" class="icon brands fa-github" target="_blank" rel="noopener noreferrer"><span class="label">GitHub</span></a></li>
+                                        <li><a href="#" class="icon brands fa-instagram" target="_blank" rel="noopener noreferrer"><span class="label">Instagram</span></a></li>
+                                        <li><a href="#" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </section>
-                    </div>
+                    </div -->
                 </div>
             </section>
 
