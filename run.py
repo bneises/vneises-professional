@@ -1,17 +1,12 @@
 import datetime
+import yaml
 from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 def tori():
-    context = {
-        'intro': {
-            'profile_path': 'static/images/ToriProfile.jpg',
-            'title': 'Victoria M. Neises, Ph.D.',
-            'subtitle': 'Animal Physiologist',
-            'statement': "Much of my research focuses on how the physiology of an organism shapes its behavior in reponse to environmental change. My research encompasses nutritional and metabolic physiology, quantitative ecology, and foraging behavior."
-        }
-    }
+    with open('data.json', 'r') as data:
+        context = yaml.safe_load(data)
     return render_template('index.html.j2', cr_years=get_cr_years(), context=context)
 
 def get_cr_years(start=2020):

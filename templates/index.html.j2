@@ -38,87 +38,29 @@
             <section id="research" class="wrapper style2 spotlights">
                 <div class="inner">
                     <h2>Research</h2>
-                    <p>
-                        To date, my work has focused on marine mammals in Alaskan ecosystems and has
-                        attempted to explore how changes in the prey field might be impacting pinniped (seals and sea lions)
-                        populations from a metabolic perspective.
-                    </p>
-                    <p>
-                        To assess these types of questions I use a variety of quantitative methods, including
-                        nonparametric analysis, such as PERMANOVA, linear discriminant analysis
-                        (LDA), and non-metric multidimensional scaling (NMDS), as well as regression
-                        analyses like GLM/GLMM and GAM/GAMM, as well as machine learning techniques
-                        such as random forest analysis.
-                    </p>
+                    {{ context.research.statement }}
                 </div>
+                {% for section in context.research.sections %}
                 <section>
                     <div class="image">
-                        <img src="{{ url_for('static', filename='images/keith-luke-dKe9GgzS8Ek-unsplash.jpg') }}" alt="" data-position="26%" />
+                        <img src="{{ url_for('static', filename='{{ section.image.path }}') }}" alt="" data-position="{{ section.image.data-position }}" />
                         <div class="credit">
-                            Photo by <a href="https://unsplash.com/@lukephotography" target="_blank" rel="noopener noreferrer">Keith Luke</a> on <a href="https://unsplash.com/@lukephotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>
+                            {{ section.image.credit }}
                         </div>
                     </div>
                     <div class="content">
                         <div class="inner">
-                            <h2>Nutritional Physiology</h2>
-                            <p>
-                                My work in nutritional physiology focuses on the examination of blubber fatty acid profiles of Alaskan harbor seals
-                                and Steller sea lions. Because blubber fatty acids are largely derived from diet in these animals,
-                                we are able to use them as a proxy for diet and examine how they differ and change
-                                over time. In this study, I was able to use two large multi-decadal data sets to examine (1) 
-                                <a href="https://doi.org/10.1093/conphys/coab036" target="_blank" rel="noopener noreferrer">spatial and temporal 
-                                differences in blubber fatty acid profiles of Alaskan harbor seal populations</a>, (2) 
-                                <a href="https://doi.org/10.1578/AM.48.4.2022.362" target="_blank" rel="noopener noreferrer">examine blubber
-                                fatty acid profiles among pregnant and lactating harbor seals, and mother pup pairs</a>, and lastly, 
-                                (3) compare regional and seasonal blubber fatty acid profiles of Alaskan harbor seals and Steller sea 
-                                lions to examine the degree of prey partitioning between these species. 
-                                As a sentinel species in Alaska, the ability to survey blubber fatty acids of harbor seals provides a way 
-                                to not only monitor diet changes that could lead to population level impacts, but also provides a 
-                                means to oversee prey community changes and ecosystem health within the regions they inhabit.
-                                This work is a collaboration between <a href="https://www.baylor.edu/biology/" target="_blank" rel="noopener noreferrer">Baylor University</a> 
-                                and <a href="https://www.adfg.alaska.gov/index.cfm?adfg=home.main" target="_blank" rel="noopener noreferrer">Alaska Department of Fish and Game</a>.
-                            </p>
+                            <h2>{{ section.header }}</h2>
+                            {{ section.statement }}
                             <ul class="actions">
-                                <li><a href="https://www.dropbox.com/sh/ttkehgw0tn7v7pe/AABOlNm9tMfIm-hCp-gi6djna?dl=0" class="button" target="_blank" rel="noopener noreferrer">SMM 2022 Poster</a></li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="image">
-                        <img src="{{ url_for('static', filename='images/554406_10100358566601697_99061861_n.jpg') }}" alt="" data-position="right center" />
-                    </div>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>Respiratory Physiology</h2>
-                            <p>
-                                My work in respiratory physiology focused on how sea lions physiologically respond to increased foraging stress
-                                caused by changes in their prey field. In this study we determined that while sea
-                                lions are able to adjust their dive behavior to maintain foraging efficiency as the
-                                cost of foraging increases, their ability to sequester accumulating carbon dioxide
-                                diminishes. We proposed that carbon dioxide may be a more sensitive
-                                physiological marker than oxygen when examining the metabolic cost of foraging. This project was a 
-                                collaboration between <a href="https://www.alaskapacific.edu/" target="_blank" rel="noopener noreferrer">Alaska Pacific University</a> and <a href="https://animaltraining.us/physiology/" target="_blank" rel="noopener noreferrer">Moss Landing Marine Laboratories</a>.
-                            </p>
-                            <ul class="actions">
-                                <li><a href="https://doi.org/10.1016/j.jembe.2016.11.001" class="button" target="_blank" rel="noopener noreferrer">Publication</a></li>
+                                {% for action in section.actions %}
+                                <li><a href="{{ action.href }}" class="button" {% if action.external_link %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ action.text }}</a></li>
+                                {% endfor %}
                             </ul>
                         </div>
                     </div>
                 </section>
-                <!--section>
-                    <a href="#" class="image"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" data-position="25% 25%" /></a>
-                    <div class="content">
-                        <div class="inner">
-                            <h2>Ultricies aliquam</h2>
-                            <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-                            <ul class="actions">
-                                <li><a href="generic.html" class="button">Learn more</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </section-->
+                {% endfor %}
             </section>
 
         <!-- CV -->
