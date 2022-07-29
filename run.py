@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def tori():
-    with open('data.json', 'r') as data:
+    with open('data.yaml', 'r') as data:
         context = yaml.safe_load(data)
     return render_template('index.html.j2', cr_years=get_cr_years(), context=context)
 
