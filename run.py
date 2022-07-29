@@ -17,4 +17,4 @@ def get_cr_years(start=2020):
     return f'{start}'
 
 if __name__ == '__main__':
-    app.run(threaded=True)
+    app.run(threaded=True, debug=True)
