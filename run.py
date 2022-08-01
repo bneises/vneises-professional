@@ -11,7 +11,7 @@ def tori():
             context = yaml.safe_load(data)
         output = render_template('index.html.j2', cr_years=get_cr_years(), context=context)
     except Exception as e:
-        output = render_template(e)
+        output = render_template('Test error', e)
     return output
 
 def get_cr_years(start=2020):
@@ -22,4 +22,4 @@ def get_cr_years(start=2020):
     return f'{start}'
 
 if __name__ == '__main__':
-    app.run(threaded=True, debug=True)
+    app.run(threaded=True)
