@@ -5,9 +5,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def tori():
-    with open('data.yaml', 'r') as data:
-        context = yaml.safe_load(data)
-    return render_template('index.html.j2', cr_years=get_cr_years(), context=context)
+    context = {}
+    try:
+        with open('data.yaml', 'r') as data:
+            context = yaml.safe_load(data)
+        output = render_template('index.html.j2', cr_years=get_cr_years(), context=context)
+    except Exception as e:
+        output = render_template(e)
+    return output
 
 def get_cr_years(start=2020):
     current_year = datetime.datetime.now().year
