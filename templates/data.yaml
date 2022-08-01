@@ -17,7 +17,7 @@ research:
   sections:
     - image:
         path: images/keith-luke-dKe9GgzS8Ek-unsplash.jpg
-        data-position: 26%
+        data_position: 26%
         credit: >
           Photo by <a href="https://unsplash.com/@lukephotography" target="_blank" rel="noopener noreferrer">Keith Luke
           </a> on <a href="https://unsplash.com/@lukephotography?utm_source=unsplash&utm_medium=referral&utm_content=cr
@@ -46,7 +46,7 @@ research:
 
     - image:
         path: images/554406_10100358566601697_99061861_n.jpg
-        data-position: right center
+        data_position: right center
       header: Respiratory Physiology
       statement: >
         <p>My work in respiratory physiology focused on how sea lions physiologically respond to increased foraging 
@@ -62,3 +62,72 @@ research:
           text: Publication
           new_tab: True
       
+cv:
+  statement: >
+    <p>Animal physiologist specializing in metabolic physiology of marine mammals. Has knowledge in many aspects of
+    marine systems, including physiological, chemical, and climatological influences on marine mammals and fishes along
+    the Pacific coast. Familiar with federal laws and regulations including Marine Mammal Protection Act, the
+    Endangered Species Act, and the National Environmental Policy Act, to name a few. Able to manage and analyze large
+    data sets utilizing both univariate and multivariate parametric and non-parametric statistical tests, as well as
+    communicate and promote findings in reports, published manuscripts, and presentations.</p>
+  published_header: Peer Reviewed Manuscripts
+  manuscripts:
+    - >
+      <b>Neises VM</b>, Karpovich SA, Keogh MJ, and Trumble SJ. 2022. Examination of blubber fatty acids in pregnant
+      and lactating Alaskan harbor seals (<i>Phoca vitulina</i>). <i>Aquatic Mammals Journal.</i> <a href="https://d
+      oi.org/10.1578/AM.48.4.2022.362" target="_blank" rel="noopener noreferrer">Doi:10.1578/AM.48.4.2022.362</a>
+    - >
+      <b>Neises VM</b>, Karpovich SA, Keogh MJ, King RS, Trumble SJ. 2021. Regional, seasonal and age class blubber
+      fatty acid signature analysis of harbour seals in Alaska from 1997 to 2010. <i>Conservation Physiology.</i><a
+      href="https://doi.org/10.1093/conphys/coab036" target="_blank" rel="noopener noreferrer">
+      Doi:10.1093/conphys/coab036</a>
+    - >
+      <b>Neises VM</b>, Zeligs J, Harris B, and Cornick L. 2017. Examining the metabolic cost of otariid foraging under
+      varying conditions. <i>Journal of Experimental Marine Biology and Ecology.</i><a href="https://doi.org/10.1016/j
+      jembe.2016.11.001" target="_blank" rel="noopener noreferrer">Doi:10.1016/j.jembe.2016.11.001</a>
+  features:
+    - icon_class: major brands fa-r-project
+      header: R
+      description: >
+        Linear discriminant analysis (LDA), Principal component analysis (PCA), Random forest analysis, Non-metric
+        multidimensional scaling (NMDS), General linear modeling (GLM/GLMM), General additive modeling (GAM/GAMM),
+        PERMANOVA, Parametric univariate and multivariate analyses
+    
+    - icon_class: solid major fa fa-globe
+      header: QGIS/ArcGIS
+      description: Spatial analysis, R and QGIS integration for spatial modeling
+    
+    - icon_class: solid major fa fa-chart-line
+      header: SPSS
+      description: Univariate and multivariate statistics, Data exploration, Data descriptives
+    
+    - icon_class: major brands fa-python
+      header: Python
+      description: Data cleanup and integration, File manipulation
+  actions:
+    - href: static/images/NeisesCV_07_2022 Website.pdf
+      text: Latest CV
+      new_tab: True
+
+get_in_touch:
+  description: Please message or follow me below.
+  contacts:
+    - href: https://www.linkedin.com/in/victoria-neises/
+      icon_class: icon brands fa-linkedin-in
+      text: LinkedIn
+      new_tab: True
+
+    - href: https://twitter.com/V_Neises
+      icon_class: icon brands fa-twitter
+      text: Twitter - @V_Neises
+      new_tab: True
+      
+    - href: https://scholar.google.com/citations?user=ZTzmaCAAAAAJ&hl=en&oi=ao
+      icon_class: icon brands fa-google
+      text: Google Scholar
+      new_tab: True
+      
+    - href: https://github.com/vneises
+      icon_class: icon brands fa-github
+      text: GitHub
+      new_tab: True
