@@ -1,0 +1,133 @@
+intro: 
+  profile_path: static/images/ToriProfile.jpg
+  title: Victoria M. Neises, Ph.D.
+  subtitle: Animal Physiologist
+  statement: >
+    Much of my research focuses on how the physiology of an organism shapes its behavior in response to environmental
+    change. My research encompasses nutritional and metabolic physiology, quantitative ecology, and foraging behavior.
+
+research:
+  statement: >
+    <p>To date, my work has focused on marine mammals in Alaskan ecosystems and has attempted to explore how changes
+    in the prey field might be impacting pinniped (seals and sea lions) populations from a metabolic perspective.</p>
+    <p>To assess these types of questions I use a variety of quantitative methods, including nonparametric analysis, 
+    such as PERMANOVA, linear discriminant analysis (LDA), and non-metric multidimensional scaling (NMDS), as well as
+    regression analyses like GLM/GLMM and GAM/GAMM, as well as machine learning techniques such as random forest
+    analysis.</p>
+  sections:
+    - image:
+        path: images/keith-luke-dKe9GgzS8Ek-unsplash.jpg
+        data_position: 26%
+        credit: >
+          Photo by <a href="https://unsplash.com/@lukephotography" target="_blank" rel="noopener noreferrer">Keith Luke
+          </a> on <a href="https://unsplash.com/@lukephotography?utm_source=unsplash&utm_medium=referral&utm_content=cr
+          editCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a>
+      header: Nutritional Physiology
+      statement: >
+        <p>My work in nutritional physiology focuses on the examination of blubber fatty acid profiles of Alaskan 
+        harbor seals and Steller sea lions. Because blubber fatty acids are largely derived from diet in these animals,
+        we are able to use them as a proxy for diet and examine how they differ and change over time. In this study, I
+        was able to use two large multi-decadal data sets to examine (1) <a href="https://doi.org/10.1093/conphys/coab0
+        36" target="_blank" rel="noopener noreferrer">spatial and temporal differences in blubber fatty acid profiles
+        of Alaskan harbor seal populations</a>, (2) <a href="https://doi.org/10.1578/AM.48.4.2022.362" target="_blank"
+        rel="noopener noreferrer">examine blubber fatty acid profiles among pregnant and lactating harbor seals, and
+        mother pup pairs</a>, and lastly, (3) compare regional and seasonal blubber fatty acid profiles of Alaskan
+        harbor seals and Steller sea lions to examine the degree of prey partitioning between these species. As a
+        sentinel species in Alaska, the ability to survey blubber fatty acids of harbor seals provides a way to not
+        only monitor diet changes that could lead to population level impacts, but also provides a means to oversee
+        prey community changes and ecosystem health within the regions they inhabit. This work is a collaboration
+        between <a href="https://www.baylor.edu/biology/" target="_blank" rel="noopener noreferrer">Baylor University
+        </a> and <a href="https://www.adfg.alaska.gov/index.cfm?adfg=home.main" target="_blank" rel="noopener 
+        noreferrer">Alaska Department of Fish and Game</a>.</p>
+      actions: 
+        - href: https://www.dropbox.com/sh/ttkehgw0tn7v7pe/AABOlNm9tMfIm-hCp-gi6djna?dl=0
+          text: SMM 2022 Poster
+          new_tab: True
+
+    - image:
+        path: images/554406_10100358566601697_99061861_n.jpg
+        data_position: right center
+      header: Respiratory Physiology
+      statement: >
+        <p>My work in respiratory physiology focused on how sea lions physiologically respond to increased foraging 
+        stress caused by changes in their prey field. In this study we determined that while sea lions are able to
+        adjust their dive behavior to maintain foraging efficiency as the cost of foraging increases, their ability to
+        sequester accumulating carbon dioxide diminishes. We proposed that carbon dioxide may be a more sensitive
+        physiological marker than oxygen when examining the metabolic cost of foraging. This project was a
+        collaboration between <a href="https://www.alaskapacific.edu/" target="_blank" rel="noopener noreferrer">
+        Alaska Pacific University</a> and <a href="https://animaltraining.us/physiology/" target="_blank" rel="noopener
+        noreferrer">Moss Landing Marine Laboratories</a>.</p>
+      actions: 
+        - href: https://doi.org/10.1016/j.jembe.2016.11.001
+          text: Publication
+          new_tab: True
+      
+cv:
+  statement: >
+    <p>Animal physiologist specializing in metabolic physiology of marine mammals. Has knowledge in many aspects of
+    marine systems, including physiological, chemical, and climatological influences on marine mammals and fishes along
+    the Pacific coast. Familiar with federal laws and regulations including Marine Mammal Protection Act, the
+    Endangered Species Act, and the National Environmental Policy Act, to name a few. Able to manage and analyze large
+    data sets utilizing both univariate and multivariate parametric and non-parametric statistical tests, as well as
+    communicate and promote findings in reports, published manuscripts, and presentations.</p>
+  published_header: Peer Reviewed Manuscripts
+  manuscripts:
+    - >
+      <b>Neises VM</b>, Karpovich SA, Keogh MJ, and Trumble SJ. 2022. Examination of blubber fatty acids in pregnant
+      and lactating Alaskan harbor seals (<i>Phoca vitulina</i>). <i>Aquatic Mammals Journal.</i> <a href="https://d
+      oi.org/10.1578/AM.48.4.2022.362" target="_blank" rel="noopener noreferrer">Doi:10.1578/AM.48.4.2022.362</a>
+    - >
+      <b>Neises VM</b>, Karpovich SA, Keogh MJ, King RS, Trumble SJ. 2021. Regional, seasonal and age class blubber
+      fatty acid signature analysis of harbour seals in Alaska from 1997 to 2010. <i>Conservation Physiology.</i><a
+      href="https://doi.org/10.1093/conphys/coab036" target="_blank" rel="noopener noreferrer">
+      Doi:10.1093/conphys/coab036</a>
+    - >
+      <b>Neises VM</b>, Zeligs J, Harris B, and Cornick L. 2017. Examining the metabolic cost of otariid foraging under
+      varying conditions. <i>Journal of Experimental Marine Biology and Ecology.</i><a href="https://doi.org/10.1016/j
+      jembe.2016.11.001" target="_blank" rel="noopener noreferrer">Doi:10.1016/j.jembe.2016.11.001</a>
+  features:
+    - icon_class: major brands fa-r-project
+      header: R
+      description: >
+        Linear discriminant analysis (LDA), Principal component analysis (PCA), Random forest analysis, Non-metric
+        multidimensional scaling (NMDS), General linear modeling (GLM/GLMM), General additive modeling (GAM/GAMM),
+        PERMANOVA, Parametric univariate and multivariate analyses
+    
+    - icon_class: solid major fa fa-globe
+      header: QGIS/ArcGIS
+      description: Spatial analysis, R and QGIS integration for spatial modeling
+    
+    - icon_class: solid major fa fa-chart-line
+      header: SPSS
+      description: Univariate and multivariate statistics, Data exploration, Data descriptives
+    
+    - icon_class: major brands fa-python
+      header: Python
+      description: Data cleanup and integration, File manipulation
+  actions:
+    - href: static/images/NeisesCV_07_2022 Website.pdf
+      text: Latest CV
+      new_tab: True
+
+get_in_touch:
+  description: Please message or follow me below.
+  contacts:
+    - href: https://www.linkedin.com/in/victoria-neises/
+      icon_class: icon brands fa-linkedin-in
+      text: LinkedIn
+      new_tab: True
+
+    - href: https://twitter.com/V_Neises
+      icon_class: icon brands fa-twitter
+      text: Twitter - @V_Neises
+      new_tab: True
+      
+    - href: https://scholar.google.com/citations?user=ZTzmaCAAAAAJ&hl=en&oi=ao
+      icon_class: icon brands fa-google
+      text: Google Scholar
+      new_tab: True
+      
+    - href: https://github.com/vneises
+      icon_class: icon brands fa-github
+      text: GitHub
+      new_tab: True
