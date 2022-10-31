@@ -139,28 +139,63 @@
 		<section id="cv" class="wrapper style3 fade-up">
 			<div class="inner">
 				<h2>CV</h2>
-				{{ context.cv.statement }}
-				<h3>{{ context.cv.published_header }}</h3>
+				<p>
+					Animal physiologist specializing in metabolic physiology of marine mammals. Has knowledge in many aspects of
+					marine systems, including physiological, chemical, and climatological influences on marine mammals and fishes along
+					the Pacific coast. Familiar with federal laws and regulations including Marine Mammal Protection Act, the
+					Endangered Species Act, and the National Environmental Policy Act, to name a few. Able to manage and analyze large
+					data sets utilizing both univariate and multivariate parametric and non-parametric statistical tests, as well as
+					communicate and promote findings in reports, published manuscripts, and presentations.
+				</p>
+				<h3>Peer Reviewed Manuscripts</h3>
 				<ul>
-					{% for manuscript in context.cv.manuscripts %}
 					<li>
-						{{ manuscript }}
+						<b>Neises VM</b>, Karpovich SA, Keogh MJ, and Trumble SJ. 2022. Examination of blubber fatty acids in pregnant
+      and lactating Alaskan harbor seals (<i>Phoca vitulina</i>). <i>Aquatic Mammals Journal.</i> <a href="https://d
+      oi.org/10.1578/AM.48.4.2022.362" target="_blank" rel="noopener noreferrer">Doi:10.1578/AM.48.4.2022.362</a>
 					</li>
-					{% endfor %}
+					<li>
+						<b>Neises VM</b>, Karpovich SA, Keogh MJ, King RS, Trumble SJ. 2021. Regional, seasonal and age class blubber
+      fatty acid signature analysis of harbour seals in Alaska from 1997 to 2010. <i>Conservation Physiology.</i><a
+      href="https://doi.org/10.1093/conphys/coab036" target="_blank" rel="noopener noreferrer">
+      Doi:10.1093/conphys/coab036</a>
+					</li>
+					<li>
+						<b>Neises VM</b>, Zeligs J, Harris B, and Cornick L. 2017. Examining the metabolic cost of otariid foraging under
+      varying conditions. <i>Journal of Experimental Marine Biology and Ecology.</i><a href="https://doi.org/10.1016/j
+      jembe.2016.11.001" target="_blank" rel="noopener noreferrer">Doi:10.1016/j.jembe.2016.11.001</a>
+					</li>
 				</ul>
 				<div class="features">
-					{% for feature in context.cv.features %}
 					<section>
-						<span class="icon {{ feature.icon_class }}"></span>
-						<h3>{{ feature.header }}</h3>
-						<p>{{ feature.description }}</p>
+						<span class="icon major brands fa-r-project"></span>
+						<h3>R</h3>
+						<p>
+							Linear discriminant analysis (LDA), Principal component analysis (PCA), Random forest analysis, Non-metric
+        multidimensional scaling (NMDS), General linear modeling (GLM/GLMM), General additive modeling (GAM/GAMM),
+        PERMANOVA, Parametric univariate and multivariate analyses
+						</p>
 					</section>
-					{% endfor %}
+					<section>
+						<span class="icon solid major fa fa-globe"></span>
+						<h3>QGIS/ArcGIS</h3>
+						<p>Spatial analysis, R and QGIS integration for spatial modeling</p>
+					</section>
+					<section>
+						<span class="icon solid major fa fa-chart-line"></span>
+						<h3>SPSS</h3>
+						<p>Univariate and multivariate statistics, Data exploration, Data descriptives</p>
+					</section>
+					<section>
+						<span class="icon major brands fa-python"></span>
+						<h3>Python</h3>
+						<p>Data cleanup and integration, File manipulation</p>
+					</section>
 				</div>
 				<ul class="actions">
-					{% for action in context.cv.actions %}
-					<li><a href="{{ action.href }}" class="button" {% if action.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ action.text }}</a></li>
-					{% endfor %}
+					<li>
+						<a href="/vneises-professional/static/images/NeisesCV_07_2022 Website.pdf" class="button" target="_blank" rel="noopener noreferrer">Latest CV</a>
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -169,15 +204,28 @@
 		<section id="get in touch" class="wrapper style1 fade-up">
 			<div class="inner">
 				<h2>Get in touch</h2>
-				<p>{{ context.get_in_touch.description }}</p>
+				<p>Please message or follow me below.</p>
 				<ul class="contact">
-					{% for contact in context.get_in_touch.contacts %}
 					<li>
-						<a href="{{ contact.href }}" class="{{ contact.icon_class }}" {% if contact.new_tab %}target="_blank" rel="noopener noreferrer"{% endif %}>
-							<span class="label">{{ contact.text }}</span>
+						<a href="https://www.linkedin.com/in/victoria-neises/" class="icon brands fa-linkedin-in" target="_blank" rel="noopener noreferrer">
+							<span class="label">LinkedIn</span>
 						</a>
 					</li>
-					{% endfor %}
+					<li>
+						<a href="https://twitter.com/V_Neises" class="icon brands fa-twitter" target="_blank" rel="noopener noreferrer">
+							<span class="label">Twitter - @V_Neises</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://scholar.google.com/citations?user=ZTzmaCAAAAAJ&hl=en&oi=ao" class="icon brands fa-google" target="_blank" rel="noopener noreferrer">
+							<span class="label">Google Scholar</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://github.com/vneises" class="icon brands fa-github" target="_blank" rel="noopener noreferrer">
+							<span class="label">GitHub</span>
+						</a>
+					</li>
 				</ul>
 			
 				<!-- div class="split style1">
@@ -219,7 +267,6 @@
 				</div -->
 			</div>
 		</section>
-
 </div>
 		<!-- Footer -->
 			<footer id="footer" class="wrapper alt">
