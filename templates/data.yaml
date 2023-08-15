@@ -105,7 +105,7 @@ cv:
       header: Python
       description: Data cleanup and integration, File manipulation
   actions:
-    - href: static/images/NeisesCV_07_2022 Website.pdf
+    - href: images/NeisesCV_07_2022 Website.pdf
       text: Latest CV
       new_tab: True
 
